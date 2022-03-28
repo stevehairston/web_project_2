@@ -1,0 +1,20 @@
+.header {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  /* height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding-top: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+  box-sizing: border-box; */
+}
+
+.header__image {
+  max-width: 636px;
+  z-index: -1;
+  position: absolute;
+  top: 135px;
+  right: 20px;
+}
