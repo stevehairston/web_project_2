@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* top: 30px; */
+  padding: 0 0 30px;
+  /* margin-left: 30px; */
+  /* right: 80px; */
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding-top: 30px;
+  margin-left: 30px;
+  position: absolute;
+  right: 80px;
+}
+
+.nav__link {
+  color: #000000;
+  /* font-family: font-family: Inter, Arial, sans-serif; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  top: 30px;
+}
+
+.nav__link:hover {
+  color: #2f80ed;
+  transition: color 0.3s linear;
+}

@@ -1,0 +1,13 @@
+.header {
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 0 0 40px 0;
+  position: relative;
+  /* box-sizing: border-box; */
+ }
