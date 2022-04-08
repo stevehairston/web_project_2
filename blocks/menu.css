@@ -40,6 +40,7 @@
   justify-content: space-between;
   gap: 100px;
   /* color: #ffffff; */
+  list-style: none;
 }
 
 .menu__card {
@@ -47,6 +48,10 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.card__content {
+  list-style: none;
 }
 
 .card__title {
@@ -58,6 +63,9 @@
 }
 
 .card__list-item {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 10;
   font-family: "Noto Serif", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -68,8 +76,9 @@
 
 .card__list-divider {
   display: flex;
-  flex-shrink: 2;
-  /* width: 100%; */
+
+  /* display: flex; */
+  /* flex: 0 1 auto; */
   /* margin: auto; */
   /* text-align:; */
   border-bottom: 1px solid #ffffff;
