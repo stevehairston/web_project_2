@@ -28,6 +28,7 @@
   font-size: 44px;
   line-height: 52px;
   position: relative;
+  width: 275px;
   z-index: 1;
   top: 100px;
   left: 80px;
@@ -35,20 +36,20 @@
 }
 
 .about__content {
-  font-family: 'Noto Serif', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  padding: 0 80px 0;
   z-index: 1;
   display: flex;
-  width: 50%;
   flex-direction: column;
   margin: 119px 0 173px;
 }
 
 .about__paragraph {
-  display: inline-block;
+  font-family: 'Noto Serif', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  width: 650px;
   margin: 0 0 20px 0;
 }
 
