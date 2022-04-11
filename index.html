@@ -69,35 +69,35 @@
 
       <main>
         <section class="menu">
-          <h2 class="menu__title">Menu</h2>
+          <h2 class="menu__title" id="menu">Menu</h2>
           <div class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </div>
-            <ul class="menu__cards">
+            <div class="menu__cards">
               <div class="card">
                 <h3 class="card__title">Filter</h3>
                   <ul class="card__content">
                     <li class="card__list-item">
                         Regular (12 oz)
-                        <div class="card__list-divider"></div>
+                        <span class="card__list-divider"></span>
                         $1
                     </li>
                     <li class="card__list-item">
                         Large (16 oz)
-                        <div class="card__list-divider"></div> $1.25
+                        <span class="card__list-divider"></span> $1.25
                     </li>
                     <li class="card__list-item">
                         XL (20 oz)
-                        <div class="card__list-divider"></div> $1.5
+                        <span class="card__list-divider"></span> $1.5
                     </li>
                     <li class="card__list-item">
                         Party-size (24 oz, decaf)
-                        <div class="card__list-divider"></div> $1.75
+                        <span class="card__list-divider"></span> $1.75
                     </li>
                     <li class="card__list-item">
                         Iced Coffee (16 oz)
-                        <div class="card__list-divider"></div> $1.25
+                        <span class="card__list-divider"></span> $1.25
                     </li>
                   </ul>
               </div>
@@ -106,19 +106,19 @@
                   <ul class="card__content">
                     <li class="card__list-item">
                       Macchiato
-                      <div class="card__list-divider"></div> $2.25
+                      <span class="card__list-divider"></span> $2.25
                     </li>
                     <li class="card__list-item">
                       Cortado
-                      <div class="card__list-divider"></div> $2.5
+                      <span class="card__list-divider"></span> $2.5
                     </li>
                     <li class="card__list-item">
                       Mocha
-                      <div class="card__list-divider"></div> $3
+                      <span class="card__list-divider"></span> $3
                     </li>
                     <li class="card__list-item">
                       Sunrise in the Bay Area (decaf)
-                      <div class="card__list-divider"></div> $10
+                      <span class="card__list-divider"></span> $10
                     </li>
                   </ul>
               </div>
@@ -127,34 +127,34 @@
                   <ul class="card__content">
                     <li class="card__list-item">
                       Almond Croissant
-                      <div class="card__list-divider"></div> $2
+                      <span class="card__list-divider"></span> $2
                     </li>
                     <li class="card__list-item">
                       Banana Bread
-                      <div class="card__list-divider"></div> $1.75
+                      <span class="card__list-divider"></span> $1.75
                     </li>
                     <li class="card__list-item">
                       Key Lime Pie
-                      <div class="card__list-divider"></div> $3
+                      <span class="card__list-divider"></span> $3
                     </li>
                     <li class="card__list-item">
                       Blue Velvet Cake
-                      <div class="card__list-divider"></div> $3.75
+                      <span class="card__list-divider"></span> $3.75
                     </li>
                     <li class="card__list-item">
                       Web Cookie
-                      <div class="card__list-divider"></div> $2
+                      <span class="card__list-divider"></span> $2
                     </li>
                     <li class="card__list-item">
                       Fresh Bug’uette
-                      <div class="card__list-divider"></div> $0.25
+                      <span class="card__list-divider"></span> $0.25
                     </li>
                   </ul>
               </div>
-            </ul>
+            </div>
         </section>
         <section class="recipes">
-          <h2 class="recipes__title">Recipes</h2>
+          <h2 class="recipes__title" id="recipes">Recipes</h2>
           <div class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
             convenience
@@ -172,28 +172,28 @@
                 <iframe
                   class="recipes__iframe"
                   src="https://www.youtube.com/embed/st571DYYTR8"
-                  allowfullscreen></iframe>
+                  allowfullscreen>
                 </iframe>
                 <p class="recipes__video-caption">French press recipe<span></span>~15 min</p>
               </div>
             </div>
         </section>
         <section class="reservation">
-          <h2 class="reservation__title">Book a table</h2>
+          <h2 class="reservation__title" id="#book-a-table">Book a table</h2>
             <div class="form__container">
               <form class="reservation__form reservation__fieldset">
                 <fieldset class="form__fieldset reservation__fieldset">
                   <label class="form__label">Name</label>
-                  <input type="text" class="form__input" placeholder="Name Surname "/>
+                  <input type="text" class="form__input" placeholder="Name Surname " required />
                   <label class="form__label">Number of guests *</label>
-                  <input type="number" min="1" max="8" class="form__input" placeholder="1-8"/>
+                  <input type="number" min="1" max="8" class="form__input" placeholder="1-8" required />
                   <label class="form__label">Date & time *</label>
-                  <input type="datetime-local" class="form__input"/>
+                  <input type="datetime-local" class="form__input" required />
                   <label class="form__label">Your email *</label>
-                  <input type="email" class="form__input" placeholder="email@email.com" />
+                  <input type="email" class="form__input" placeholder="email@email.com" required />
                   <button type="submit" class="form__button">Book a table</button>
                   <div class="form__checkbox-contents">
-                    <input type="checkbox" class="form__checkbox" id="agree-terms" name="agree-terms"/>
+                    <input type="checkbox" class="form__checkbox" id="agree-terms" name="agree-terms" required />
                     <label class="form__label" for="agree-terms">I agree with the terms of use</label>
                   </div>
 
@@ -202,7 +202,7 @@
             </div>
         </section>
         <section class="about">
-          <h2 class="about__title" id="about">About the coffee shop</h2>
+          <h2 class="about__title">About the coffee shop</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Our coffee shop is located in the Practicum Library's hall. It
