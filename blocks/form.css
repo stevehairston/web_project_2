@@ -18,14 +18,16 @@
   margin: 0 0 80px;
 }
 
-.reservation__fieldset {
-   padding: 0;
+.reservation__form {
+margin: 0;
+padding: 0;
 }
 
  .form__fieldset {
    display: flex;
    flex-direction: column;
    margin: auto;
+   padding: 0;
    max-width: 385px;
    border: 0;
  }
