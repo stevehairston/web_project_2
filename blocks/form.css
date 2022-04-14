@@ -21,6 +21,7 @@
    min-height: 60px;
    padding: 19px 20px;
    border: 1px solid #838383;
+   box-sizing: border-box;
  }
 
  .form__button {

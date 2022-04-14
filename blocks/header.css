@@ -46,7 +46,7 @@
 
 .header__description {
   max-width: 683px;
-  margin: 28px 0 0 80px;
+  margin: 0 0 0 80px;
   font-family: "Noto Serif", 'Times New Roman', serif;
   font-style: normal;
   font-weight: normal;
@@ -69,13 +69,13 @@
   font-weight: 500;
 }
 
+.header__paragraph:last-child {
+  margin: 0;
+  align-self: flex-end;
+}
+
 .header__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.header__address {
-  margin: 0;
-  align-self: flex-end;
 }

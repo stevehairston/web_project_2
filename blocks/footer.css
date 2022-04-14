@@ -51,3 +51,7 @@
   align-items: center;
   margin-right: 10px;
 }
+
+.footer__copyright {
+  margin: 0;
+}
