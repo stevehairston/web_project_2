@@ -60,20 +60,23 @@
           class="header__image"
         />
         <div class="header__footer">
-          <p class="header__paragraph">Hours</p>
-          <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
-          <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
+          <div class="header__paragraphs">
+            <p class="header__paragraph">Hours</p>
+            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
+          </div>
+          <p class="header__address">200 Success Avenue, The Town of Practicum</p>
         </div>
-        <p class="header__address">200 Success Avenue, The Town of Practicum</p>
+
       </header>
 
       <main>
         <section class="menu">
           <h2 class="menu__title" id="menu">Menu</h2>
-          <div class="menu__subtitle">
+          <p class="menu__subtitle">
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
-          </div>
+          </p>
             <div class="menu__cards">
               <div class="card">
                 <h3 class="card__title">Filter</h3>
@@ -155,10 +158,10 @@
         </section>
         <section class="recipes">
           <h2 class="recipes__title" id="recipes">Recipes</h2>
-          <div class="recipes__subtitle">
+          <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
             convenience
-          </div>
+          </p>
             <div class="recipes__videos">
               <div class="recipes__video">
                 <iframe
@@ -182,14 +185,14 @@
           <h2 class="reservation__title" id="#book-a-table">Book a table</h2>
               <form class="form reservation__form">
                 <fieldset class="form__fieldset">
-                  <label class="form__label">Name</label>
-                  <input type="text" class="form__input" placeholder="Name Surname " required />
-                  <label class="form__label">Number of guests *</label>
-                  <input type="number" min="1" max="8" class="form__input" placeholder="1-8" required />
-                  <label class="form__label">Date & time *</label>
-                  <input type="datetime-local" class="form__input" required />
-                  <label class="form__label">Your email *</label>
-                  <input type="email" class="form__input" placeholder="email@email.com" required />
+                  <label class="form__label" for="name">Name</label>
+                  <input type="text" class="form__input" id="name" placeholder="Name Surname" required />
+                  <label class="form__label" for="number-guests">Number of guests *</label>
+                  <input type="number" min="1" max="8" class="form__input" id="number-guests" placeholder="1-8" required />
+                  <label class="form__label" for="date-time">Date & time *</label>
+                  <input type="datetime-local" class="form__input" id="date-time" required />
+                  <label class="form__label" for="email">Your email *</label>
+                  <input type="email" class="form__input" id="email" placeholder="email@email.com" required />
                   <button type="submit" class="form__button">Book a table</button>
                   <div class="form__checkbox-contents">
                     <input type="checkbox" class="form__checkbox" id="agree-terms" name="agree-terms" required />
@@ -217,13 +220,11 @@
       </main>
       <footer class="footer" id="contacts">
         <div class="footer__content">
-          <div class="footer__column-logo">
             <img
               src="./images/logo_practicum.svg"
               alt="Practicum logo"
               class="footer__logo"
             />
-          </div>
           <div class="footer__column-social">
             <h4 class="footer__social-heading">Social media</h4>
             <ul class="footer__list">
@@ -250,7 +251,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer__copyright">&#169; 2022 Steve Hairston</div>
+        <p class="footer__copyright">&#169; 2022 Steve Hairston</p>
       </footer>
     </div>
   </body>

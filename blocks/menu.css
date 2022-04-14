@@ -23,7 +23,7 @@
   margin: auto;
   max-width: 780px;
   padding: 0 0 100px;
-  font-family: "Noto Serif", Arial, sans-serif;
+  font-family: "Noto Serif", 'Times New Roman', serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
@@ -35,50 +35,4 @@
   flex-wrap: wrap;
   gap: 100px;
   justify-content: center;
-  margin-top: 71px;
-}
-
-.card {
-  box-sizing: border-box;
-  max-width: 600px;
-  width: calc(50% - 50px);
-}
-
-.card__content {
-  list-style: none;
-  padding: 0;
-  font-family: "Noto Serfi", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.card__title {
-  margin-bottom: 32px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.card__list-item {
-  display: flex;
-  flex-basis: auto;
-  justify-content: space-between;
-  overflow: hidden;
-  font-family: "Noto Serif", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 20px;
-}
-
-.card__list-divider {
-  display: flex;
-  flex-basis: auto;
-  flex-grow: 7;
-  border-bottom: 1px solid #ffffff;
-  margin: 0;
 }

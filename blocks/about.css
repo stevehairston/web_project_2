@@ -22,6 +22,7 @@
 }
 
 .about__title {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -29,9 +30,8 @@
   position: relative;
   width: 275px;
   z-index: 1;
-  top: 100px;
-  left: 80px;
   margin: 0;
+  padding: 100px 0 0 80px;
 }
 
 .about__content {
@@ -43,7 +43,7 @@
 }
 
 .about__paragraph {
-  font-family: 'Noto Serif', Arial, sans-serif;
+  font-family: 'Noto Serif', 'Times New Roman', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

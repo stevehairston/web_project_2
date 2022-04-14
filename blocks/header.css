@@ -1,4 +1,5 @@
 .header {
+  box-sizing: border-box;
   background-color: #ffffff;
   background-image: url("../images/background_header.svg");
   background-repeat: no-repeat;
@@ -7,8 +8,11 @@
   height: 100vh;
   min-height: 720px;
   max-height: 800px;
-  padding: 0 0 40px 0;
+  padding-bottom: 40px;
   position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__image {
@@ -18,6 +22,7 @@
   margin: 0;
   top: 124px;
   right: 5px;
+  z-index: -1;
 }
 
 .header__title {
@@ -29,12 +34,9 @@
   line-height: 72px;
 }
 
-.title__content {
-}
-
 .header__span-accent {
   display: block;
-  font-family: "Noto Serif", Arial, sans-serif;
+  font-family: "Noto Serif", 'Times New Roman', serif;
   font-style: italic;
   font-weight: normal;
   font-size: 60px;
@@ -45,7 +47,7 @@
 .header__description {
   max-width: 683px;
   margin: 28px 0 0 80px;
-  font-family: "Noto Serif", Arial, sans-serif;
+  font-family: "Noto Serif", 'Times New Roman', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -53,19 +55,18 @@
 }
 
 .header__footer {
-  position: absolute;
-  left: 0;
-  bottom: 40px;
   display: flex;
-  flex-direction: column;
-  padding: 40px 80px 0;
+  padding: 0 80px 0;
+  margin-top: auto;
   justify-content: space-between;
   box-sizing: border-box;
+  vertical-align: bottom;
 }
 
 .header__paragraph {
   margin: 0;
   padding: 0;
+  font-weight: 500;
 }
 
 .header__list {
@@ -75,8 +76,6 @@
 }
 
 .header__address {
-  display: flex;
-  position: absolute;
-  bottom: 40px;
-  right: 80px;
+  margin: 0;
+  align-self: flex-end;
 }
